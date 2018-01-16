@@ -1,9 +1,8 @@
 var SafeMath = artifacts.require('./SafeMath.sol');
-var JincorToken = artifacts.require("./JincorToken.sol");
-var JincorTokenPreSale = artifacts.require("./JincorTokenPreSale.sol");
+var UTTToken = artifacts.require("./UTTToken.sol");
 
 module.exports = function(deployer) {
   deployer.deploy(SafeMath);
-  deployer.link(SafeMath, JincorToken);
-  deployer.deploy(JincorToken);
+  deployer.link(SafeMath, UTTToken);
+  deployer.deploy(UTTToken);
 };

@@ -279,7 +279,7 @@ contract('UTTToken', function(accounts) {
     assert.equal(balance, 500000 * 10 ** 4);
 
     const supply = await token.totalSupply().valueOf();
-    assert.equal(supply, 34500000 * 10 ** 4);
+    assert.equal(supply, 1027700 * 10 ** 4);
 
     //should not allow to burn more
     try {
